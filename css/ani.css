@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*1130px*/
+header,
+header.on,
+header.on h1,
+#content_inner > ul > li,
+nav,
+nav > ul > li > ul > li a,
+#content_inner > ul > li > div > p > a,
+.icon_social > ul > li > ul
+{transition : all 0.4s ease;-webkit-transition : all 0.4s ease;-moz-transition : all 0.4s ease}
+

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+.header > nav {width: 100%;vertical-align: middle;text-align: center;position: fixed;height:56px;z-index:10001;background-color:#fff;}
+.header > nav > aside {position: absolute;z-index: 1;width: 100%;top: 0;left: 0;padding: 7px 46px;background-color: #fff;display: none}
+.header > nav > aside > .close {position: absolute;top: 15px;right: 10px;background: url('../images/close.gif') no-repeat center;text-indent: -999em;width: 24px;height: 24px}
+.header > nav > .utility {padding: 0;position: absolute;left: 50%;margin-left: 482px;top: 15px}
+.header > nav > .utility > a {width:18px;height:15px;display:inline-block;background:url('../images/m_s.png') no-repeat 0 0;text-indent: -999em}
+.header > nav > .utility > .menu{display: none}
+.header > nav > .utility > .m_logo{float: right;width:63px;height:15px;display:none;background-position: -26px -19px;background:url('../images/logo_white.png') no-repeat 0 0;}
+.header > nav > ul {position: relative;display:inline-block;clear: both}
+.header > nav > ul > li {display: inline-block;float: left;padding: 0;margin: 0}
+.header > nav > ul > li > a {font-size: 20px;font-style: normal;font-weight: 300;letter-spacing: 0px;text-transform: none;padding: 13px 30px;color: #0a0a0a;display: inline-block;position:relative}
+.header > nav > ul > li > a.pc_logo {display:inline-block;}
+.header > nav > ul > li > ul > li > a {position:relative; color:#fff;}
+.header > nav > ul > li:last-child > a {position:relative}
+.header > nav > ul > li.on > a:before {background-position:0 -11px}
+.header > nav > ul > li > a:hover {color: #58544c; text-decoration:none;}
+.header > nav > ul > li > a.active {color: #1e73be}
+.header > nav > ul > li {position:relative}
+.header > nav > ul > li > ul {background-color: #2b2b2b;color: #1b1b1b;font-size: 14px;display:none;position:absolute;left: 0;width: 100%;z-index: 2}
+.header > nav > ul > li > ul > li.on > a:before {background-position:0 -11px}
+.header > nav > ul > li > ul > li a {display: block;padding:10px 20px; color:#fff;}
+.header > nav > ul > li > ul > li a:hover {color:#ffd101; text-decoration:none;}
+.header > nav > ul > li > ul > li > ul {background: rgba(255, 255, 255, 0.07);display:none}
+.header > nav > ul > li > ul > li > ul > li > a {padding:0 auto;}
+
+/* header */
+.header.index_header > nav > ul > li > a.pc_logo {padding:15px 30px;}
+.header.index_header > nav > ul > li > a {padding:18px 30px;}
+
+
+@media only screen and (max-width: 1000px) {
+	.header > nav {background-color: #fff;}
+	.header > nav > .utility {padding: 20px 40px 36px;position: relative;left: auto;top: auto;margin: 0}
+	.header > nav > .utility > a {width:18px;height:15px;display:inline-block;background:url('../images/m_s.png') no-repeat 0 0;text-indent: -999em}
+	.header > nav > .utility > .menu{float: left;background-position:0 0;display:block}
+        .header > nav > .utility > .m_logo{display:block;}
+	.header > nav > ul {display: none;padding: 0 40px;text-align: left; background-color:#fff;}
+	.header > nav > ul > li {display: block;float:none}
+	.header > nav > ul > li > a {color: #1b1b1b;font-size: 15px;display: block;border-bottom: 1px solid #1b1b1b;padding: 15px 0}
+        .header > nav > ul > li > a:hover {color: #ffd101; text-decoration:none;}
+	.header > nav > ul > li > a.pc_logo {display:none;}
+	.header > nav > ul > li:hover > ul {display:none}
+	.header > nav > ul > li > ul {position:relative;background: none;width: 100%;padding-right: 0;padding: 0 0 0 17px;display:none}
+	.header > nav > ul > li > ul > li {border-bottom: 1px solid #1b1b1b;}
+	.header > nav > ul > li > ul > li a {padding: 11px 0;color:#1b1b1b;}
+	.header > nav > ul > li > a:before {position: absolute;top: 21px;right: 10px;content: '';width: 11px;height: 6px;background: url('../images/up_down.gif') no-repeat 0 0}
+	.header > nav > ul > li > ul > li.down > a:before {position: absolute;top: 21px;right: 10px;content: '';width: 11px;height: 6px;background: url('../images/up_down.gif') no-repeat 0 0}
+	.header > nav > ul > li > ul > li > ul > li > a {padding-left: 26px;background:#f3f3f3}
+}

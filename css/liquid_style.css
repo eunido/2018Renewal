@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+/* section 정리 */
+#novo .first_section {background:url('../images/novo_bg.png') no-repeat center; width:100%; height:917px; text-align:center;}
+.first_section {margin:0 auto;}
+#medusa .first_section {background:url('../images/medusa_bg.png') no-repeat center; background-position-y:70%; width:100%; height:917px; text-align:center;}
+#modpop .first_section {background:url('../images/mod_bg.png') no-repeat center; background-position-y:70%; width:100%; height:917px; text-align:center;}
+
+/* 액상 이름 */
+.liquid_sub_title {text-align:center; padding:50px 0; font-size:3rem;}
+#medusa .liquid_sub_title {color:#fff;}
+
+/* 첫번째 섹션 liquid 박스 */
+.first_section .liquid_title {display:inline-block; border:1px solid #000; padding:20px 50px; font-size:3rem; margin-top:200px;}
+#medusa .first_section .liquid_title {margin-top:100px;}
+#modpop .first_section .liquid_title {margin-top:100px;}
+
+/* 노보 리퀴드 원 */
+.novo_ex {margin:0 auto; margin-top:200px; width:790px;}
+.novo_ex li {width:250px; height:250px; border-radius:50%; font-size:2rem; float:left; display:table; margin-right:20px; opacity:0.9;}
+.novo_ex li:last-child {margin:0;}
+.novo_ex li p {display:table-cell; vertical-align:middle;}
+.novo_ex li:nth-child(1) {background-color:#f7c650;}
+.novo_ex li:nth-child(2) {background-color:#f0f0ee;}
+.novo_ex li:nth-child(3) {background-color:#92d5de;}
+
+/* 액상 섹션 */
+#fruit_section {background-color:#f7c650;width:100%;}
+#tobacco_section {background-color:#f0f0ee;}
+#md_section {background-color:#92d5de;}
+#medusa_section {background-color:#4b4b4a;}
+#modpop_section {background-color:#ffd800;}
+
+/* 액상 병 정리 */
+.novoliquid {max-width:1015px; margin:0 auto;}
+#modpop .novoliquid {max-width:1370px;}
+.novoliquid > ul > li {display:block; width:280px; height:280px; background-color:#fff; border-radius:50%; float:left; margin:0 50px 50px 25px; cursor:pointer;}
+.novoliquid > ul > li > a {display:block;cursor:pointer;}
+#novo .novoliquid li:nth-child(3n), #medusa .novoliquid li:nth-child(3n) {margin-right:0;}
+#modpop .novoliquid li:nth-child(4n) {margin-right:0;}
+.novoliquid > ul > li {position:relative;}
+.novoliquid li a > img {position:absolute; width:90%; top:15%; left:5%; z-index:5;}
+.novoliquid li a > p {position:absolute; text-align:center; font-size:1.35rem; line-height:120%; top:80%; left:50%; 
+                    transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%);
+                    -o-transform:translate(-50%, -50%);
+                    z-index:10;}
+.novoliquid li > p > span {font-size:1.2rem;}
+.novoliquid li:hover {position:relative; background:rgba(255,255,255,0.9) no-repeat 50% 50%; cursor:pointer;}
+.novoliquid li:hover > img {transform:scale(1.2,1.2); -ms-transform:scale(1.2,1.2); -webkit-transform:scale(1.2,1.2);
+                            -moz-transform:scale(1.2,1.2); -o-transform:scale(1.2,1.2); transition-duration:1s;}
+#novo .novoliquid li:before {content:''; width:98px; height:282px; display:block; background:url('../images/liquid/novo_liquid_95.png') no-repeat; margin-left:-50px; position:relative; z-index:10;}
+#novo .novoliquid li.special:before {width:98px; height:278px; background:url('../images/liquid/novo_liquid_20.png') no-repeat;}
+
+#medusa .novoliquid li:before {content:''; width:88px; height:280px; display:block; background:url('../images/liquid/medusa_liquid.png') no-repeat; margin-left:-30px; position:relative; z-index:10;}
+#modpop .novoliquid li:before {content:''; width:72px; height:282px; display:block; z-index:10; position:relative;margin-left:-30px;}
+
+#modpop .novoliquid li:nth-child(1):before {background:url('../images/liquid/pop1.png') no-repeat;}
+#modpop .novoliquid li:nth-child(2):before {background:url('../images/liquid/pop2.png') no-repeat;}
+#modpop .novoliquid li:nth-child(3):before {background:url('../images/liquid/pop3.png') no-repeat;}
+#modpop .novoliquid li:nth-child(4):before {background:url('../images/liquid/pop4.png') no-repeat;}
+#modpop .novoliquid li:nth-child(5):before {background:url('../images/liquid/pop5.png') no-repeat;}
+#modpop .novoliquid li:nth-child(6):before {background:url('../images/liquid/pop6.png') no-repeat;}
+#modpop .novoliquid li:nth-child(7):before {background:url('../images/liquid/pop7.png') no-repeat;}
+.novoliquid:after {content:''; display:block; clear:both;}
+.fruitliquid:after {content:''; display:block; clear:both;}
+.view {cursor:pointer;}
+.view:after {content:''; display:block; clear:both;}
+.view:after { content:url('../images/view.png'); display:none; position:absolute; left:50%; top:50%; 
+                    transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%);
+                    -o-transform:translate(-50%, -50%);z-index:5;}
+.view:hover:after { display:inline-block;}
+
+/* on off 스위치 */
+/* The switch - the box around the slider */
+.switch {
+  position: fixed;
+  z-index:1000;
+  right:50px;
+  bottom:50px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  vertical-align:middle;
+}
+
+p.density {
+  position:fixed;
+  z-index:1000;
+  right:55px;;
+  bottom:30px;
+  margin:0px;
+  display:inline-block;
+  font-size:15px;
+  font-weight:bold;
+}
+ 
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+ 
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1b1b1b;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+ 
+input:checked + .slider {
+  background-color: #ff0000;
+}
+ 
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff0000;
+}
+ 
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  -moz-transform:translateX(26px);
+  -o-transform:translateX(26px);
+}
+ 
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+ 
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-width:1405px) {
+    #modpop .novoliquid {max-width:1050px;}
+    #modpop .novoliquid li:nth-child(4n) {margin-right:50px;}
+    #modpop .novoliquid li:nth-child(3n) {margin-right:0;}
+}
+ 
+
+@media screen and (max-width:1024px) {
+    /* section 정리 */
+    #novo .first_section {background-size:70%; height:500px; text-align:center;}
+    .first_section {margin:0 auto;}
+    #medusa .first_section {background-size:30%; height:500px; text-align:center;}
+    #modpop .first_section {background-size:70%; height:500px; text-align:center;}
+    
+    
+    /* 첫번째 섹션 liquid 박스 */
+    .first_section .liquid_title {display:inline-block; border:1px solid #000; padding:10px 30px; font-size:2rem; margin-top:80px;}
+    #medusa .first_section .liquid_title {margin-top:60px;}
+    #modpop .first_section .liquid_title {margin-top:60px;}
+
+    /* 노보 리퀴드 원 */
+    .novo_ex {margin:0 auto; margin-top:70px; width:490px;}
+    .novo_ex li {width:150px; height:150px; border-radius:50%; font-size:1.2rem; float:left; display:table; margin-right:20px; opacity:0.9;}
+
+    
+    /* 액상 이름 */
+    .liquid_sub_title {text-align:center; padding:40px 0 20px 0; font-size:2rem;}
+    
+    
+    /* 액상병 정리 */
+    .novoliquid {max-width:580px; margin:0 auto;}
+    .novoliquid > ul > li {width:240px; height:240px; }
+    #novo .novoliquid li:nth-child(3n), #medusa .novoliquid li:nth-child(3n) {margin-right:50px;}
+    #novo .novoliquid li:nth-child(2n), #medusa .novoliquid li:nth-child(2n) {margin-right:0;}
+    #modpop .novoliquid {max-width:580px;}
+    #modpop .novoliquid li:nth-child(3n) {margin-right:50px;}
+    #modpop .novoliquid li:nth-child(2n) {margin-right:0;}
+    .novoliquid > ul > li {position:relative;}
+    .novoliquid li > img {position:absolute; width:80%; top:20%; left:10%; z-index:5;}
+    .novoliquid li a > p {position:absolute; text-align:center; font-size:1.1rem; line-height:120%; top:80%; left:50%;                         
+                    transform:translate(-50%, -50%); -ms-transform:translate(-50%, -50%); -moz-transform:translate(-50%, -50%); -webkit-transform:translate(-50%, -50%);
+                    -o-transform:translate(-50%, -50%);z-index:10;}
+    .novoliquid li a > p > span {font-size:1rem;}
+    #novo .novoliquid li:before {height:240px; margin-top:10px; background-size:80%}
+    #novo .novoliquid li.special:before {height:240px; background-size:80%}
+    #modpop .novoliquid li:before {display:block; margin-top:10px;}
+    #modpop .novoliquid li:nth-child(1):before {height:240px; background-size:80%;}
+    #modpop .novoliquid li:nth-child(2):before {height:240px; background-size:80%}
+    #modpop .novoliquid li:nth-child(3):before {height:240px; background-size:80%}
+    #modpop .novoliquid li:nth-child(4):before {height:240px; background-size:80%}
+    #modpop .novoliquid li:nth-child(5):before {height:240px; background-size:80%}
+    #modpop .novoliquid li:nth-child(6):before {height:240px; background-size:80%}
+    #modpop .novoliquid li:nth-child(7):before {height:240px; background-size:80%}
+    
+    #medusa .novoliquid li:before {height:240px; margin-top:10px; background-size:80%;}
+    
+
+}
+
+@media screen and (max-width:768px) {
+    .novoliquid {max-width:240px; margin:0 auto;}
+    #modpop .novoliquid {max-width:240px;}
+    
+    .liquid_sub_title {font-size:1.4rem;}
+    
+    /* 첫번째 섹션 liquid 박스 */
+    .first_section .liquid_title {display:inline-block; border:1px solid #000; padding:10px 30px; font-size:1.4rem; margin-top:80px;}
+    #novo .first_section {background-size:90%; height:400px;}
+    .first_section {margin:0 auto;}
+    #medusa .first_section {background-size:40%; height:400px;}
+    #modpop .first_section {background-size:80%; height:400px;}
+    #modpop .first_section .liquid_title {margin-top:100px;}
+
+    /* 노보 리퀴드 원 */
+    .novo_ex {margin:0 auto; margin-top:70px; width:320px;}
+    .novo_ex li {width:100px; height:100px; border-radius:50%; font-size:1rem; float:left; display:table; margin-right:10px; opacity:0.9;}
+}
+
+@media screen and (max-width:360px) {
+    .novoliquid {max-width:200px; margin:0 auto;}
+    .novoliquid > ul > li {width:200px; height:200px;}
+    .novoliquid li > img {position:absolute; width:70%; top:20%; left:10%; z-index:5;}
+    .novoliquid li a > p {font-size:1rem; line-height:120%; top:80%; left:50%;z-index:10;}
+    .novoliquid li a > p > span {font-size:0.9rem;}
+
+    
+    #novo .novoliquid li:before {height:200px; margin-top:10px; background-size:70%}
+    #novo .novoliquid li.special:before {height:200px; background-size:70%}
+    #modpop .novoliquid li:before {display:block; margin-top:10px;}
+    #modpop .novoliquid li:nth-child(1):before {height:200px; background-size:70%;}
+    #modpop .novoliquid li:nth-child(2):before {height:200px; background-size:70%}
+    #modpop .novoliquid li:nth-child(3):before {height:200px; background-size:70%}
+    #modpop .novoliquid li:nth-child(4):before {height:200px; background-size:70%}
+    #modpop .novoliquid li:nth-child(5):before {height:200px; background-size:70%}
+    #modpop .novoliquid li:nth-child(6):before {height:200px; background-size:70%}
+    #modpop .novoliquid li:nth-child(7):before {height:200px; background-size:70%}
+    
+    #medusa .novoliquid li:before {height:200px; background-size:70%;}
+    
+    /* 첫번째 섹션 liquid 박스 */
+    .first_section .liquid_title {display:inline-block; border:1px solid #000; padding:10px 30px; font-size:1.3rem; margin-top:50px;}
+    #medusa .first_section .liquid_title {margin-top:40px;}
+    #novo .first_section {background-size:90%; height:300px;}
+    .first_section {margin:0 auto;}
+    #medusa .first_section {background-size:50%; height:300px;}
+    #modpop .first_section {background-size:150%; height:300px;}
+    
+    #modpop .first_section .liquid_title {margin-top:50px;}
+
+    /* 노보 리퀴드 원 */
+    .novo_ex {margin:0 auto; margin-top:50px; width:300px;}
+    .novo_ex li {width:90px; height:90px; border-radius:50%; font-size:0.8rem; float:left; display:table; margin-right:10px; opacity:0.9;}
+}

@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+#wrap {margin:0 auto;}
+
+/* footer */
+.footer-idx {height: auto !important;}
+.warning {width:100%; margin:0 auto; padding:25px 20px; background-color:#f0f0f0; font-size:0.8rem; font-weight:300; line-height:140%;}
+.warning .inner-text {max-width:980px; margin:0 auto; text-align:left;}
+.f3f3f3-footer .warning {background-color:#f3f3f3;}
+.info {width:100%; margin:0 auto; padding:25px 20px; background-color:#d2d2d2; font-size:0.9rem;}
+.info-copy { max-width:700px; margin:0 auto;}
+.info-copy ul li { float:left; display:inline-block; margin:0 auto; text-align:center; border-right:1px solid; line-height:12px; padding:0 15px; margin-bottom:10px;}
+.info-copy ul li:last-child { border-right:0; margin-bottom:0;}
+.info-copy:after {content:''; display:block; clear:both;}
+.info .copyright {margin:0 auto; text-align:center; line-height:150%;}
+
+/* sub_title */
+.sub_liquid {width:100%; height:256px; margin:0 auto; position:relative; top:0;}
+.inform .sub_liquid {background:url('../images/info_bg.png') no-repeat center;}
+.liquid .sub_liquid {background:url('../images/liquid_bg.png') no-repeat center;}
+.product .sub_liquid {background:url('../images/product_bg.png') no-repeat center;}
+.sub_liquid .txt {padding-top:105px; left:0; text-align:center;}
+.product .sub_liquid .txt h1{color:#fff;}
+.product .sub_liquid .txt h3{color:#fff;}
+.sub_liquid .sub_line {width:240px; height:2px; background-color:black; margin:0 auto; margin:10px auto;}
+.product .sub_line{background-color:#fff;}
+
+
+/* modal */
+.modal {text-align:center; padding:0!important;}
+.modal:before {content:'';display:inline-block;height:100%;vertical-align:middle;}
+
+.closer {cursor:pointer;}
+
+/* Modal Content */
+.modal-dialog {display:inline-block;text-align:left;vertical-align:middle;}
+
+/* The Close Button */
+
+.pc-certi .modal-content {display:block; width:400px;}
+.pc-certi .modal-content img{display:block; width:400px;}
+
+.mobile-certi .modal-content {display:block; width:313px;}
+.mobile-certi .modal-content img{display:block; width:313px;}
+
+.modal-content {display:block; width:630px;}
+.modal-content img.liquid-box {display:inline-block;}
+.modal-content .close {position:absolute; color: #aaaaaa; right:15px; top:15px; font-size: 35px; font-weight: bold; display:inline-block;}
+.close:hover, .close:focus {color: #000; text-decoration: none; cursor: pointer;}
+
+/* certification.php */
+.certi_img {max-width:1050px; margin:0 auto; text-align:center; margin-top:50px;}
+.certi_img li {width:300px; height:420px; border:1px solid #eee; text-align:center; box-sizing:border-box; float:left; margin:0 25px 70px 25px; position:relative;}
+.certi_img li img {width:300px; height:420px;}
+.certi_img li .certi_name {width:298px; height:40px; background:#464646; position:absolute; bottom:-40px; color:#fff; z-index:10; text-align:center; line-height:40px; box-sizing:border-box;}
+.certi_img li .closer {width:60px; height:60px; background:url('../images/certi/closer.png') no-repeat; position:absolute; bottom:0; right:0; box-sizing:border-box;}
+.certi_img ul:after {content:''; display:block; clear:both;}
+
+#trigger1-1 {display:block;}
+#trigger2-1 {display:block;}
+#trigger1-2 {display:none;}
+#trigger2-2 {display:none;}
+
+
+#question {
+    padding:50px;
+}
+
+
+/* company-info */
+.about_wrap {
+    margin:50px auto;
+    text-align:center;
+}
+.about_wrap p {
+    font-size:1.375rem;
+    line-height:160%;
+    margin-bottom:50px;
+}
+.about_wrap p span {
+    font-size:2.25rem;
+}
+
+.about_wrap .vision_li {
+    width:924px;
+    height:260px;
+    margin:0 auto;
+}
+
+.about_wrap .vision_li li {
+    float:left;
+    width:260px;
+    height:260px;
+    margin:0 24px;
+    text-align:center;
+    position:relative;
+    background:url('../images/cycle_ico.png') no-repeat center;
+    background-size:cover;
+    display:table;
+}
+.about_wrap .vision_li li p{
+    font-size:2.25rem;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.vision_li {
+    content:0; display:block; clear:both;
+}
+
+.about_wrap img {
+    text-align:center;
+    margin-top:50px;
+}
+
+/* email */
+.email {
+    max-width:980px;
+    margin:0 auto;
+}
+
+/* 제품소개 */
+#tata_kit {
+    background:url('../images/tatakit_bg.jpg') no-repeat center;
+    width:100%;
+    text-align:center;
+}
+
+#k600 {
+    background:url('../images/k600_bg.jpg') repeat center;
+    text-align:center;
+}
+
+#medusa14 {
+    background:url('../images/medusa14_bg.png') repeat center;
+    text-align:center;
+}
+
+#tvc {
+    background:#444;
+    text-align:center;
+}
+
+@media screen and (max-width:1024px) {
+    #tata_kit img {
+        width:100%;
+    }
+
+    /* certification.php */
+    .certi_img {max-width:870px; margin:0 auto; text-align:center; margin-top:50px;}
+    .certi_img li {width:260px; height:364px; text-align:center; box-sizing:border-box; margin:0 15px 70px 15px; position:relative;}
+    .certi_img li img {width:260px; height:364px;}
+    .certi_img li .certi_name {width:258px; }
+    .certi_img li .closer {background-size:80%; position:absolute; bottom:-12px; right:-12px; box-sizing:border-box;}
+    
+    
+    /* company-info */
+    
+    .about_wrap {
+        margin:50px 20px; 
+    }
+    
+    .about_wrap p {
+        font-size:1.25rem;
+    }
+    .about_wrap p span {
+        font-size:1.75rem;
+    }
+
+    .about_wrap .vision_li {
+        width:684px;
+        height:180px;
+        margin:0 auto;
+    }
+
+    .about_wrap .vision_li li {        
+        width:180px;
+        height:180px;
+        margin:0 24px;
+    }
+    .about_wrap .vision_li li p{
+        font-size:1.5rem;
+    }
+
+    .about_wrap img {
+        width:14%;
+    }
+
+}
+
+@media screen and (max-width:999px) {
+    #medusa14 img {
+        width:100%;
+    }
+    #k600 img {
+        width:100%;
+    }
+    #tvc img {
+        width:100%;
+    }
+}
+
+@media screen and (max-width:890px) {    
+    .certi_img {max-width:580px;}    
+}
+
+@media screen and (max-width:768px) {
+    /* sub-title */
+    .sub_liquid {background-size:100% auto;height:186px;}
+    .sub_liquid .txt {padding-top:80px; left:0; text-align:center;}
+    .sub_liquid .txt h1{font-size:2rem;}
+    .sub_liquid .txt h3{font-size:1.5rem;}
+    .sub_liquid .sub_line {width:200px;}
+    .liquid .sub_liquid {background:url('../images/liquid_mobile_bg.png') no-repeat center;}
+    
+    /* certi */
+    #trigger1-1 {display:none;}
+    #trigger2-1 {display:none;}
+    #trigger1-2 {display:block;}
+    #trigger2-2 {display:block;}
+    
+    .novoliquid {max-width:240px; margin:0 auto;}
+    
+    .certi_img {max-width:580px; margin:0 auto; text-align:center; margin-top:50px;}
+
+    
+    /* company-info */    
+    .about_wrap p {
+        font-size:1rem;
+    }
+    .about_wrap p span {
+        font-size:1.25rem;
+    }
+    
+    .about_wrap .vision_li {
+        width:510px;
+        height:150px;
+        margin:0 auto;
+    }
+
+    .about_wrap .vision_li li {        
+        width:150px;
+        height:150px;
+        margin:0 10px;
+    }
+    .about_wrap .vision_li li p{
+        font-size:1.2rem;
+    }
+    
+    .about_wrap img {
+        width:30%;
+    }
+}
+
+@media screen and (max-width:640px) {
+    
+    .modal-content {display:block; width:400px;}
+    .modal-content img.liquid-box {width:400px;}
+    
+    
+    
+    .certi_img {max-width:290px; margin:0 auto; text-align:center; margin-top:50px;}
+    
+    /* company-info */    
+    .about_wrap .vision_li {
+        width:420px;
+        height:120px;
+        margin:0 auto;
+    }
+
+    .about_wrap .vision_li li {        
+        width:120px;
+        height:120px;
+        margin:0 10px;
+    }
+    .about_wrap .vision_li li p{
+        font-size:1rem;
+        line-height:120%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    
+    .modal-content {display:block; width:360px;}
+    .modal-content img.liquid-box {width:360px;}
+    
+
+    
+    /* company-info */    
+    .about_wrap .vision_li {
+        width:360px;
+        height:100px;
+        margin:0 auto;
+    }
+
+    .about_wrap .vision_li li {        
+        width:100px;
+        height:100px;
+        margin:0 10px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    
+     
+    .modal-content {display:block; width:300px;}
+    .modal-content img.liquid-box {width:300px;}
+    
+    /* company-info */    
+    .about_wrap .vision_li {
+        max-width:300px;
+        height:90px;
+        margin:0 auto;
+    }
+
+    .about_wrap .vision_li li {        
+        width:90px;
+        height:90px;
+        margin:0 5px;
+    }
+    .about_wrap .vision_li li p{
+        font-size:0.9rem;
+        line-height:120%;
+    }
+}
+
+
+
+@media screen and (max-width:320px) {
+    
+    .modal-content {display:block; width:280px;}
+    .modal-content img.liquid-box {width:280px;}
+    
+    /* company-info */    
+    .about_wrap .vision_li {
+        max-width:270px;
+        height:80px;
+        margin:0 auto;
+    }
+
+    .about_wrap .vision_li li {        
+        width:80px;
+        height:80px;
+        margin:0 5px;
+    }
+    .about_wrap .vision_li li p{
+        font-size:0.8rem;
+        line-height:120%;
+    }
+}
+

@@ -1,0 +1,47 @@
+<feed xmlns="http://webmastertool.naver.com">
+<id>http://www.novokorea.co.kr</id>
+<title>Naver Syndication Sample Document</title>
+<author>
+<name>webmaster</name>
+<email>cflavor@naver.com</email>
+</author>
+<updated>2017-03-30T14:57:49+01:00</updated>
+<entry>
+<id>
+http://www.novokorea.co.kr/index.php</id>
+<title>
+노보 전자담배 액상
+</title>
+<author>
+<name>webmaster</name>
+</author>
+<updated>2017-03-30T14:57:49+01:00</updated>
+<published>2017-03-30T14:57:49+01:00</published>
+<link rel="via" href="http://www.novokorea.co.kr" title="NOVO"/>
+<content type="html">
+<![CDATA[
+<p>노보 전자담배 액상 홈페이지입니다.</p>
+]]>
+</content>
+</entry>
+<entry>
+<id>
+http://www.novokorea.co.kr/index.php
+</id>
+<title>
+<![CDATA[ NOVO LIQUID ]]>
+</title>
+<author>
+<name>webmaster</name>
+</author>
+<updated>2017-03-30T14:57:49+01:00</updated>
+<published>2017-03-30T14:57:49+01:00</published>
+<link rel="via" href="http://www.novokorea.co.kr/index.php" title="노보 전자담배"/>
+<content type="html">
+<![CDATA[
+<p>노보 전자담배 액상 홈페이지입니다.</p>
+]]>
+</content>
+</entry>
+<deleted-entry ref="http://www.novokorea.co.kr/index.php" when="2017-03-30T14:57:49+01:00"/>
+</feed>
