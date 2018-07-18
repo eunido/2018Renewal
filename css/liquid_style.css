@@ -246,6 +246,7 @@ input:checked + .slider:before {
     
     #medusa .novoliquid li:before {height:200px; background-size:70%;}
     
+    
     /* 첫번째 섹션 liquid 박스 */
     .first_section .liquid_title {display:inline-block; border:1px solid #000; padding:10px 30px; font-size:1.3rem; margin-top:50px;}
     #medusa .first_section .liquid_title {margin-top:40px;}
